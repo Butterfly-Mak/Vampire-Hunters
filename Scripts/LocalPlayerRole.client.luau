@@ -11,7 +11,6 @@ function RoleAssignReceived(message : NetMessage)
 	local vampire_id : integer = message:GetInt("VampirePlayerID");
 	local detective_id : integer = message:GetInt("DetectivePlayerID");
 	
-	
 	if (vampire_id ~= player_id) and (detective_id ~= player_id) then
 		player_role = 3;
 		print(player.Name .. " is a survivor.");
