@@ -1,0 +1,106 @@
+{
+  "Version": "2.0.10",
+  "FileType": 1,
+  "Objects": [
+    {
+      "Name": "UNGROUP",
+      "ClassName": "Model",
+      "ID": "c164ef36-5d66-4e06-97e2-7853b303f265",
+      "Properties": {
+        "LocalPosition": [
+          -53,
+          3.0103,
+          -1
+        ],
+        "LocalRotation": [
+          0,
+          -0,
+          -0
+        ],
+        "LocalSize": [
+          1,
+          1,
+          1
+        ],
+        "Tags": []
+      },
+      "Children": [
+        {
+          "Name": "NPC",
+          "ClassName": "NPC",
+          "ID": "b603cd77-37b8-4796-a347-fff81edd53b5",
+          "Properties": {
+            "Velocity": [
+              -0,
+              0,
+              0
+            ],
+            "SeatOffset": [
+              0,
+              1.5,
+              0
+            ],
+            "Health": 100,
+            "MaxHealth": 100,
+            "JumpPower": 25,
+            "WalkSpeed": 16,
+            "UseNametag": true,
+            "NametagOffset": [
+              0,
+              0,
+              0
+            ],
+            "NametagVisibleRadius": 40,
+            "DisplayName": "",
+            "Anchored": true,
+            "CanCollide": true,
+            "CollisionLayers": 1,
+            "CollisionMask": 3,
+            "AngularVelocity": [
+              0,
+              0,
+              0
+            ],
+            "LocalPosition": [
+              0,
+              0.3,
+              0
+            ],
+            "LocalRotation": [
+              0,
+              -0,
+              -0
+            ],
+            "LocalSize": [
+              1,
+              1,
+              1
+            ],
+            "Tags": []
+          },
+          "Children": [
+            {
+              "Name": "ScriptInstance",
+              "ClassName": "ServerScript",
+              "ID": "397b6cae-bc0e-454f-b516-b2371bf5850f",
+              "Properties": {
+                "IsEnabled": true,
+                "LinkedScript": "b56274f9-bda7-41af-b0f4-0605dd97593f",
+                "Compatibility": true,
+                "Tags": []
+              },
+              "Children": [],
+              "LinkedModel": null,
+              "IsLinkedChild": true
+            }
+          ],
+          "LinkedModel": null,
+          "IsLinkedChild": true
+        }
+      ],
+      "LinkedModel": "e48ac05c-f22b-41e4-9695-766a8146a908",
+      "IsLinkedChild": false
+    }
+  ],
+  "NonInstanceObjects": []
+}

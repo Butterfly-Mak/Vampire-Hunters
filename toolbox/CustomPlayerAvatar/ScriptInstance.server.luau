@@ -1,0 +1,1 @@
+local npc = script.Parent:LoadAppearance(725759) --Replace number with ID of the player

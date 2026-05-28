@@ -1,0 +1,367 @@
+{
+  "Version": "2.0.10",
+  "FileType": 1,
+  "Objects": [
+    {
+      "Name": "Cathal35pt",
+      "ClassName": "Model",
+      "ID": "b175fb01-e760-48e1-a57c-a2ec38f5d79e",
+      "Properties": {
+        "LocalPosition": [
+          -53.875,
+          7.0637,
+          -68.1
+        ],
+        "LocalRotation": [
+          0,
+          -0,
+          -0
+        ],
+        "LocalSize": [
+          1,
+          1,
+          1
+        ],
+        "Tags": []
+      },
+      "Children": [
+        {
+          "Name": "NPC",
+          "ClassName": "NPC",
+          "ID": "86e7f1c5-ecc5-460d-a60f-a26a12c18c61",
+          "Properties": {
+            "Velocity": [
+              -0,
+              0,
+              0
+            ],
+            "SeatOffset": [
+              0,
+              1.5,
+              0
+            ],
+            "Health": 100,
+            "MaxHealth": 100,
+            "JumpPower": 25,
+            "WalkSpeed": 16,
+            "UseNametag": true,
+            "NametagOffset": [
+              0,
+              0,
+              0
+            ],
+            "NametagVisibleRadius": 40,
+            "DisplayName": "",
+            "Anchored": false,
+            "CanCollide": true,
+            "CollisionLayers": 1,
+            "CollisionMask": 3,
+            "AngularVelocity": [
+              0,
+              0,
+              0
+            ],
+            "LocalPosition": [
+              0.375,
+              -0.0637,
+              0.1
+            ],
+            "LocalRotation": [
+              0,
+              -0,
+              -0
+            ],
+            "LocalSize": [
+              1,
+              1,
+              1
+            ],
+            "Tags": []
+          },
+          "Children": [],
+          "LinkedModel": null,
+          "IsLinkedChild": true
+        },
+        {
+          "Name": "MeshPart",
+          "ClassName": "Mesh",
+          "ID": "334b3af4-9f0d-453a-8e65-278402d873a2",
+          "Properties": {
+            "Asset": "2cede8b6-7c56-4a76-8ce4-9bfe251c31f3",
+            "CollisionType": 0,
+            "Color": "ffffffff",
+            "Velocity": [
+              -0,
+              0,
+              0
+            ],
+            "AngularVelocity": [
+              0,
+              -0,
+              -0
+            ],
+            "AngularDrag": 0.05,
+            "Anchored": true,
+            "CanCollide": true,
+            "CollisionLayers": 1,
+            "CollisionMask": 1,
+            "LocalPosition": [
+              0.375,
+              3.0637,
+              0.1
+            ],
+            "LocalRotation": [
+              0,
+              -0,
+              -0
+            ],
+            "LocalSize": [
+              0.5,
+              0.5,
+              0.5
+            ],
+            "Tags": []
+          },
+          "Children": [],
+          "LinkedModel": null,
+          "IsLinkedChild": true
+        },
+        {
+          "Name": "MeshPart",
+          "ClassName": "Mesh",
+          "ID": "9e5be556-8ca8-48ec-8266-d0de90054ba4",
+          "Properties": {
+            "Asset": "2e54ee3e-6a5d-42c8-a63b-02b642965b25",
+            "CollisionType": 0,
+            "Color": "ffffffff",
+            "Velocity": [
+              -0,
+              0,
+              0
+            ],
+            "AngularVelocity": [
+              0,
+              -0,
+              -0
+            ],
+            "AngularDrag": 0.05,
+            "Anchored": true,
+            "CanCollide": true,
+            "CollisionLayers": 1,
+            "CollisionMask": 1,
+            "LocalPosition": [
+              0.375,
+              0.6862,
+              0.1
+            ],
+            "LocalRotation": [
+              0,
+              -0,
+              -0
+            ],
+            "LocalSize": [
+              0.5,
+              0.5,
+              0.5
+            ],
+            "Tags": []
+          },
+          "Children": [],
+          "LinkedModel": null,
+          "IsLinkedChild": true
+        },
+        {
+          "Name": "MeshPart",
+          "ClassName": "Mesh",
+          "ID": "da8ba590-5709-4e97-93fa-182a36cecab0",
+          "Properties": {
+            "Asset": "56a2b329-7aa4-4cd3-9687-1a240cbc985f",
+            "CollisionType": 0,
+            "Color": "ffffffff",
+            "Velocity": [
+              -0,
+              0,
+              0
+            ],
+            "AngularVelocity": [
+              0,
+              -0,
+              -0
+            ],
+            "AngularDrag": 0.05,
+            "Anchored": true,
+            "CanCollide": true,
+            "CollisionLayers": 1,
+            "CollisionMask": 1,
+            "LocalPosition": [
+              0.375,
+              2.3862,
+              0.4
+            ],
+            "LocalRotation": [
+              0,
+              -0,
+              -0
+            ],
+            "LocalSize": [
+              0.5,
+              0.5,
+              0.5
+            ],
+            "Tags": []
+          },
+          "Children": [],
+          "LinkedModel": null,
+          "IsLinkedChild": true
+        },
+        {
+          "Name": "MeshPart",
+          "ClassName": "Mesh",
+          "ID": "f2415f25-4d32-4ae5-ae16-a2a8a9f7c621",
+          "Properties": {
+            "Asset": "a33c04c5-c378-4c11-b522-4b0cc59fd64b",
+            "CollisionType": 0,
+            "Color": "ffffffff",
+            "Velocity": [
+              -0,
+              0,
+              0
+            ],
+            "AngularVelocity": [
+              0,
+              -0,
+              -0
+            ],
+            "AngularDrag": 0.05,
+            "Anchored": true,
+            "CanCollide": true,
+            "CollisionLayers": 1,
+            "CollisionMask": 1,
+            "LocalPosition": [
+              0.125,
+              0.5513,
+              -0.6
+            ],
+            "LocalRotation": [
+              0,
+              -0,
+              -0
+            ],
+            "LocalSize": [
+              0.5,
+              0.5,
+              0.5
+            ],
+            "Tags": []
+          },
+          "Children": [],
+          "LinkedModel": null,
+          "IsLinkedChild": true
+        },
+        {
+          "Name": "MeshPart",
+          "ClassName": "Mesh",
+          "ID": "91fa7819-2285-4c01-9034-6eac4e4a5048",
+          "Properties": {
+            "Asset": "21dc7ac4-c2d3-4639-94c2-c3e960220b68",
+            "CollisionType": 0,
+            "Color": "ffffffff",
+            "Velocity": [
+              -0,
+              0,
+              0
+            ],
+            "AngularVelocity": [
+              0,
+              -0,
+              -0
+            ],
+            "AngularDrag": 0.05,
+            "Anchored": true,
+            "CanCollide": true,
+            "CollisionLayers": 1,
+            "CollisionMask": 1,
+            "LocalPosition": [
+              -1.375,
+              -1.0638,
+              0.1
+            ],
+            "LocalRotation": [
+              89.980194,
+              -0,
+              -0
+            ],
+            "LocalSize": [
+              0.5,
+              0.5,
+              0.5
+            ],
+            "Tags": []
+          },
+          "Children": [],
+          "LinkedModel": null,
+          "IsLinkedChild": true
+        }
+      ],
+      "LinkedModel": "b6cf7743-6b48-4bd6-bce8-1b18e59ab44c",
+      "IsLinkedChild": false
+    }
+  ],
+  "NonInstanceObjects": [
+    {
+      "Name": "PTMeshAsset9",
+      "ClassName": "PTMeshAsset",
+      "ID": "2cede8b6-7c56-4a76-8ce4-9bfe251c31f3",
+      "Properties": {
+        "AssetID": 25234
+      },
+      "Children": [],
+      "LinkedModel": null,
+      "IsLinkedChild": false
+    },
+    {
+      "Name": "PTMeshAsset10",
+      "ClassName": "PTMeshAsset",
+      "ID": "2e54ee3e-6a5d-42c8-a63b-02b642965b25",
+      "Properties": {
+        "AssetID": 33729
+      },
+      "Children": [],
+      "LinkedModel": null,
+      "IsLinkedChild": false
+    },
+    {
+      "Name": "PTMeshAsset11",
+      "ClassName": "PTMeshAsset",
+      "ID": "56a2b329-7aa4-4cd3-9687-1a240cbc985f",
+      "Properties": {
+        "AssetID": 35146
+      },
+      "Children": [],
+      "LinkedModel": null,
+      "IsLinkedChild": false
+    },
+    {
+      "Name": "PTMeshAsset12",
+      "ClassName": "PTMeshAsset",
+      "ID": "a33c04c5-c378-4c11-b522-4b0cc59fd64b",
+      "Properties": {
+        "AssetID": 40077
+      },
+      "Children": [],
+      "LinkedModel": null,
+      "IsLinkedChild": false
+    },
+    {
+      "Name": "PTMeshAsset13",
+      "ClassName": "PTMeshAsset",
+      "ID": "21dc7ac4-c2d3-4639-94c2-c3e960220b68",
+      "Properties": {
+        "AssetID": 41387
+      },
+      "Children": [],
+      "LinkedModel": null,
+      "IsLinkedChild": false
+    }
+  ]
+}

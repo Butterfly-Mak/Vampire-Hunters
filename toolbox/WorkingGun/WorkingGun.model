@@ -1,0 +1,393 @@
+{
+  "Version": "2.0.10",
+  "FileType": 1,
+  "Objects": [
+    {
+      "Name": "Model",
+      "ClassName": "Model",
+      "ID": "fa0eee10-d666-4f3b-bbc0-a728d9cf1c82",
+      "Properties": {
+        "LocalPosition": [
+          0,
+          0,
+          0
+        ],
+        "LocalRotation": [
+          0,
+          -0,
+          -0
+        ],
+        "LocalSize": [
+          1,
+          1,
+          1
+        ],
+        "Tags": []
+      },
+      "Children": [
+        {
+          "Name": "Pistol",
+          "ClassName": "Tool",
+          "ID": "b05abd34-0287-4739-978f-26c047d7b3aa",
+          "Properties": {
+            "Droppable": true,
+            "Velocity": [
+              0,
+              0,
+              0
+            ],
+            "AngularVelocity": [
+              0,
+              -0,
+              -0
+            ],
+            "Anchored": true,
+            "CanCollide": true,
+            "CollisionLayers": 1,
+            "CollisionMask": 3,
+            "LocalPosition": [
+              0,
+              0,
+              0
+            ],
+            "LocalRotation": [
+              0,
+              -0,
+              -0
+            ],
+            "LocalSize": [
+              1,
+              1,
+              1
+            ],
+            "Tags": []
+          },
+          "Children": [
+            {
+              "Name": "Pistol",
+              "ClassName": "Mesh",
+              "ID": "d50d4a6a-4551-408f-bc39-1d16edabb589",
+              "Properties": {
+                "Asset": "7776dcaf-df9e-4984-afcb-2e3190ff10af",
+                "CollisionType": 0,
+                "Color": "ffffffff",
+                "Velocity": [
+                  -0,
+                  0,
+                  0
+                ],
+                "AngularVelocity": [
+                  0,
+                  -0,
+                  -0
+                ],
+                "Anchored": true,
+                "CanCollide": true,
+                "CollisionLayers": 1,
+                "CollisionMask": 1,
+                "LocalPosition": [
+                  0,
+                  0,
+                  0.5
+                ],
+                "LocalRotation": [
+                  0,
+                  -0,
+                  -0
+                ],
+                "LocalSize": [
+                  0.7,
+                  0.7,
+                  0.7
+                ],
+                "Tags": []
+              },
+              "Children": [
+                {
+                  "Name": "LocalScript",
+                  "ClassName": "ClientScript",
+                  "ID": "ec284fbd-76d5-4952-a3c8-f4168359b8b7",
+                  "Properties": {
+                    "IsEnabled": true,
+                    "LinkedScript": "d546e4f9-59fe-4fe3-855e-8ce87444412c",
+                    "Compatibility": true,
+                    "Tags": []
+                  },
+                  "Children": [],
+                  "LinkedModel": null,
+                  "IsLinkedChild": true
+                },
+                {
+                  "Name": "ServerScript",
+                  "ClassName": "ServerScript",
+                  "ID": "c92cb88d-ceb2-4b19-b60e-c42abf12f482",
+                  "Properties": {
+                    "IsEnabled": true,
+                    "LinkedScript": "d596e2be-44cd-4f36-9953-3483bbdf05dd",
+                    "Compatibility": true,
+                    "Tags": []
+                  },
+                  "Children": [],
+                  "LinkedModel": null,
+                  "IsLinkedChild": true
+                },
+                {
+                  "Name": "Gunshot",
+                  "ClassName": "Sound",
+                  "ID": "ae2c7c21-1285-41df-8f94-8883418d090e",
+                  "Properties": {
+                    "Audio": "47536ccd-0a85-45c2-8179-3b31e349bc2e",
+                    "Volume": 1,
+                    "Pitch": 1,
+                    "Autoplay": false,
+                    "Loop": false,
+                    "PlayInWorld": false,
+                    "Paused": false,
+                    "MaxDistance": 60,
+                    "LocalPosition": [
+                      0,
+                      0,
+                      -1
+                    ],
+                    "LocalRotation": [
+                      0,
+                      -0,
+                      -0
+                    ],
+                    "LocalSize": [
+                      8,
+                      2,
+                      4
+                    ],
+                    "Tags": []
+                  },
+                  "Children": [],
+                  "LinkedModel": null,
+                  "IsLinkedChild": true
+                },
+                {
+                  "Name": "MuzzleFlash",
+                  "ClassName": "PointLight",
+                  "ID": "496fbe09-f45f-4a60-956c-f059fce075a8",
+                  "Properties": {
+                    "Range": 30.03,
+                    "Enabled": true,
+                    "Color": "ffd800ff",
+                    "Brightness": 0,
+                    "LightSize": 0,
+                    "Specular": 0.5,
+                    "Shadows": false,
+                    "LocalPosition": [
+                      0,
+                      0.6,
+                      1.6
+                    ],
+                    "LocalRotation": [
+                      0,
+                      -0,
+                      -0
+                    ],
+                    "LocalSize": [
+                      2,
+                      2,
+                      2
+                    ],
+                    "Tags": []
+                  },
+                  "Children": [],
+                  "LinkedModel": null,
+                  "IsLinkedChild": true
+                },
+                {
+                  "Name": "Reload",
+                  "ClassName": "Sound",
+                  "ID": "0eed8d93-0d27-4f58-9b6c-064ba35bee00",
+                  "Properties": {
+                    "Audio": "8fd9652a-dc09-4222-a0a4-a5248678660d",
+                    "Volume": 1,
+                    "Pitch": 1,
+                    "Autoplay": false,
+                    "Loop": false,
+                    "PlayInWorld": false,
+                    "Paused": false,
+                    "MaxDistance": 60,
+                    "LocalPosition": [
+                      0,
+                      0,
+                      0
+                    ],
+                    "LocalRotation": [
+                      0,
+                      -0,
+                      -0
+                    ],
+                    "LocalSize": [
+                      8,
+                      2,
+                      4
+                    ],
+                    "Tags": []
+                  },
+                  "Children": [],
+                  "LinkedModel": null,
+                  "IsLinkedChild": true
+                },
+                {
+                  "Name": "DryFire",
+                  "ClassName": "Sound",
+                  "ID": "34ced00e-ca45-4b83-bcb5-77c9f77c3794",
+                  "Properties": {
+                    "Audio": "45de8c77-9278-48a5-82be-78989b9d8e12",
+                    "Volume": 1,
+                    "Pitch": 1,
+                    "Autoplay": false,
+                    "Loop": false,
+                    "PlayInWorld": false,
+                    "Paused": false,
+                    "MaxDistance": 60,
+                    "LocalPosition": [
+                      0,
+                      0,
+                      0
+                    ],
+                    "LocalRotation": [
+                      0,
+                      -0,
+                      -0
+                    ],
+                    "LocalSize": [
+                      8,
+                      2,
+                      4
+                    ],
+                    "Tags": []
+                  },
+                  "Children": [],
+                  "LinkedModel": null,
+                  "IsLinkedChild": true
+                },
+                {
+                  "Name": "FireEvent",
+                  "ClassName": "NetworkEvent",
+                  "ID": "5892202d-5417-475b-b02d-d8691ce34622",
+                  "Properties": {
+                    "Tags": []
+                  },
+                  "Children": [],
+                  "LinkedModel": null,
+                  "IsLinkedChild": true
+                },
+                {
+                  "Name": "ReloadEvent",
+                  "ClassName": "NetworkEvent",
+                  "ID": "423814f4-4ff7-41b0-8a6a-a0bd2ca0755a",
+                  "Properties": {
+                    "Tags": []
+                  },
+                  "Children": [],
+                  "LinkedModel": null,
+                  "IsLinkedChild": true
+                },
+                {
+                  "Name": "Barrel",
+                  "ClassName": "Part",
+                  "ID": "44413acc-c89e-474f-9051-4b95a93e9990",
+                  "Properties": {
+                    "Material": 13,
+                    "Color": "a3a2a500",
+                    "CastShadows": false,
+                    "Velocity": [
+                      -0,
+                      0,
+                      0
+                    ],
+                    "AngularVelocity": [
+                      0,
+                      -0,
+                      -0
+                    ],
+                    "Anchored": true,
+                    "CanCollide": false,
+                    "CollisionLayers": 1,
+                    "CollisionMask": 1,
+                    "LocalPosition": [
+                      0.028599998,
+                      0.5,
+                      1.2857
+                    ],
+                    "LocalRotation": [
+                      0,
+                      -0,
+                      -0
+                    ],
+                    "LocalSize": [
+                      0.1429,
+                      0.1429,
+                      0.1429
+                    ],
+                    "Tags": []
+                  },
+                  "Children": [],
+                  "LinkedModel": null,
+                  "IsLinkedChild": true
+                }
+              ],
+              "LinkedModel": null,
+              "IsLinkedChild": true
+            }
+          ],
+          "LinkedModel": null,
+          "IsLinkedChild": true
+        }
+      ],
+      "LinkedModel": "7dad74ee-2dba-4604-9eb1-ef5323e589b6",
+      "IsLinkedChild": false
+    }
+  ],
+  "NonInstanceObjects": [
+    {
+      "Name": "PTMeshAsset2",
+      "ClassName": "PTMeshAsset",
+      "ID": "7776dcaf-df9e-4984-afcb-2e3190ff10af",
+      "Properties": {
+        "AssetID": 34119
+      },
+      "Children": [],
+      "LinkedModel": null,
+      "IsLinkedChild": false
+    },
+    {
+      "Name": "PTAudioAsset4",
+      "ClassName": "PTAudioAsset",
+      "ID": "47536ccd-0a85-45c2-8179-3b31e349bc2e",
+      "Properties": {
+        "AudioID": 13628
+      },
+      "Children": [],
+      "LinkedModel": null,
+      "IsLinkedChild": false
+    },
+    {
+      "Name": "PTAudioAsset5",
+      "ClassName": "PTAudioAsset",
+      "ID": "8fd9652a-dc09-4222-a0a4-a5248678660d",
+      "Properties": {
+        "AudioID": 13626
+      },
+      "Children": [],
+      "LinkedModel": null,
+      "IsLinkedChild": false
+    },
+    {
+      "Name": "PTAudioAsset6",
+      "ClassName": "PTAudioAsset",
+      "ID": "45de8c77-9278-48a5-82be-78989b9d8e12",
+      "Properties": {
+        "AudioID": 49253
+      },
+      "Children": [],
+      "LinkedModel": null,
+      "IsLinkedChild": false
+    }
+  ]
+}
