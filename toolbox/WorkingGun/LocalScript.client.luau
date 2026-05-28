@@ -1,34 +1,40 @@
-script.Parent.Parent.Activated:Connect(function ()
-    local ray = nil
-    local camRay = Input:ScreenPointToRay(Input.MousePosition)
-    local dir = camRay.Position - script.Parent["Barrel"].Position
-    local worldRay = game["Environment"]:Raycast(script.Parent["Barrel"].Position, (camRay.Position - script.Parent["Barrel"].Position).normalized, infinite, {script.Parent["MuzzleFlash"]})
-    if (camRay and worldRay) and camRay.Instance == worldRay.Instance then
-        ray = camRay
-    else
-        ray = worldRay
-    end
-    --local ray = Input:ScreenPointToRay(Input.MousePosition)
-    --print("works")
-    if ray then
-        --print("works2")
-        local netMesg = NetMessage.new()
-        netMesg.AddInstance("rayInst", ray.Instance)
-        netMesg.AddVector3("rayPos", ray.Position)
-        
-        script.Parent["FireEvent"]:InvokeServer(netMesg)
-    end
+local MAX_COOLDOWN = 1.0;
+local cooldown = 0.0;
+
+local tool : Tool = script.Parent.Parent;
+local gun_barrel : Part = script.Parent["Barrel"];
+local fire_event : NetworkEvent = script.Parent["FireEvent"];
+
+tool.Activated:Connect(function ()
+	if cooldown > 0.0 then return end;
+
+  local mouse_world_pos : Vector3 = Input:GetMouseWorldPosition();
+	
+  local dir : Vector3 = (mouse_world_pos - gun_barrel.Position);
+	
+  local ray : RayResult = Environment:Raycast(gun_barrel.Position, dir.Normalized, 9999999, {gun_barrel, Players.LocalPlayer});
+	
+  local netMesg : NetMessage = NetMessage.new();
+	
+	netMesg:AddBool("success", ray ~= nil);
+	
+	if ray == nil then
+    netMesg.AddVector3("rayPos", mouse_world_pos);
+	else
+    netMesg.AddInstance("rayInst", ray.Instance);
+    netMesg.AddVector3("rayPos", ray.Position);
+  end
+	
+  fire_event:InvokeServer(netMesg);
+	
+	cooldown = MAX_COOLDOWN;
 end)
 
-Input.KeyDown:Connect(function(key)
-    if key == "R" then
-        local netMesg = NetMessage.new()
-        netMesg.AddInstance("model", script.Parent)
-        netMesg.AddNumber("time", script.Parent["Reload"].Length)
-        script.Parent["ReloadEvent"]:InvokeServer(netMesg)
-    end
-end)
+function update_cooldown(delta : number)
+	if cooldown <= 0.0 then return end;
+	
+	cooldown -= delta;
+	print(cooldown);
+end;
 
-game.Rendered:Connect(function ()
-    game["PlayerGUI"]["PistolGUI"]["Crosshair"].Visible = game["Environment"]["Camera"].IsFirstPerson and Input.CursorLocked
-end)
+world.Rendered:Connect(update_cooldown);

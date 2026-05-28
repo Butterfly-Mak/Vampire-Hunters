@@ -3,17 +3,15 @@ local last_state : integer = game_state.State;
 
 local entered_event : NetworkEvent = script:GetParent()["EnteredState"];
 local exited_event : NetworkEvent = script:GetParent()["ExitedState"];
+local test_event : NetworkEvent = script:GetParent()["Test"];
 
 function UpdateLobby(delta : number)
-	print(delta);
 end;
 
 function UpdateGame(delta : number)
-
 end;
 
 function UpdateResults(delta : number)
-
 end;
 
 local update_function = UpdateLobby;
@@ -32,15 +30,12 @@ end;
 
 
 function ExitLobbyState()
-
 end;
 
 function ExitGameState()
-
 end;
 
 function ExitResultsState()
-
 end;
 
 function ExitState(state : integer)
